@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../fonts/Inter-Light.ttf") format("truetype");
+}
+
+:root {
+  --bs-blue: #1A71F3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter" !important;
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content .chart {
+  max-width: 800px !important;
+}
+
+.content .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.content .sub-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #8D8D8D;
+}
+
+.content .amount {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.content .percent-down {
+  font-size: 12px;
+  margin-left: 5px;
+  line-height: 15px;
+  color: #EF476F;
+}
+
+.content .percent-up {
+  font-size: 12px;
+  margin-left: 5px;
+  line-height: 15px;
+  color: #05A47B;
+}
+
+/* high chart css customize */
+.highcharts-crosshair .highcharts-crosshair-category {
+  color: #F7F9FD;
+}

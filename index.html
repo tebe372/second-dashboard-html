@@ -7,19 +7,20 @@
       <title>Highcharts</title>
 
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <!-- ======== main-wrapper start =========== -->
     <div class="main-wrapper">
       <div class="content">
         <div class="row m-2">
-          <div>
+          <div class="title">
             <span>Product Owned</span>
           </div>
           <div class="row">
-            <div class="col-2">
-              <span> SESSIONS </span><br>
-              <span> 351,533 </span><br>
+            <div class="col-xxl-2 col-xl-3 col-sm-4">
+              <span class="sub-title"> SESSIONS </span><br>
+              <span class="amount"> 351,533 </span><br>
               <div class="d-flex flex-row align-items-center">
                 <div
                     class="arrow d-flex justify-content-center align-items-center rounded-circle"
@@ -28,12 +29,12 @@
                         src="assets/images/arrow_down_line.svg"
                     />
                 </div>
-                <span class="percent"> -16.9% </span>
+                <span class="percent-down"> -16.9% </span>
               </div>
             </div>
-            <div class="col-2">
-              <span> CONVERSIONS </span><br>
-              <span> 432 </span><br>
+            <div class="col-xxl-2 col-xl-3 col-sm-4">
+              <span class="sub-title"> CONVERSIONS </span><br>
+              <span class="amount"> 432 </span><br>
               <div class="d-flex flex-row align-items-center">
                 <div
                     class="arrow d-flex justify-content-center align-items-center rounded-circle"
@@ -42,12 +43,12 @@
                         src="assets/images/arrow_down_line.svg"
                     />
                 </div>
-                <span class="percent"> -7.7% </span>
+                <span class="percent-down"> -7.7% </span>
               </div>
             </div>
-            <div class="col-2">
-              <span> CONVERSION RATE </span><br>
-              <span> 0,12% </span><br>
+            <div class="col-xxl-2 col-xl-3 col-sm-4">
+              <span class="sub-title"> CONVERSION RATE </span><br>
+              <span class="amount"> 0,12% </span><br>
               <div class="d-flex flex-row align-items-center">
                 <div
                     class="arrow d-flex justify-content-center align-items-center rounded-circle"
@@ -56,11 +57,11 @@
                         src="assets/images/arrow_up_line.svg"
                     />
                 </div>
-                <span class="percent"> -11.0% </span>
+                <span class="percent-up"> -11.0% </span>
               </div>
             </div>
           </div>
-          <div id="line-container-1"></div>
+          <div class="chart" id="line-container-1"></div>
         </div>
       </div>
     </div>    
