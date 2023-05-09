@@ -110,10 +110,15 @@ function initCharts() {
       borderRadius: 8,
       formatter: function () {
         return '<span style="color:'+ this.series.color +'"> ● </span>' + ' ' + Intl.NumberFormat().format(this.y);
-      }
+      },
     },
 
     series: [{
+      tooltip: {
+        followPointer: false,
+        distance: -50,
+      },
+      
       point: {
         events: {
           mouseOver: function(e) {
