@@ -13,55 +13,307 @@
     <!-- ======== main-wrapper start =========== -->
     <div class="main-wrapper">
       <div class="content">
-        <div class="row m-2">
-          <div class="title">
-            <span>Product Owned</span>
+        <div class="row m-2 justify-content-md-center">
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>Product Owned</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 351,533 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -16.9% </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 432 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -7.7% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 0,12% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_up_line.svg"
+                      />
+                  </div>
+                  <span class="percent-up"> -11.0% </span>
+                </div>
+              </div>
+            </div>
+            <div class="chart" id="line-container-product"></div>
           </div>
-          <div class="row">
-            <div class="col-xxl-2 col-xl-3 col-sm-4">
-              <span class="sub-title"> SESSIONS </span><br>
-              <span class="amount"> 351,533 </span><br>
-              <div class="d-flex flex-row align-items-center">
-                <div
-                    class="arrow d-flex justify-content-center align-items-center rounded-circle"
-                >
-                    <img
-                        src="assets/images/arrow_down_line.svg"
-                    />
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>Segment</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 351,533 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -16.9% </span>
                 </div>
-                <span class="percent-down"> -16.9% </span>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 101 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -63.4% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 0,18% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -17.2% </span>
+                </div>
               </div>
             </div>
-            <div class="col-xxl-2 col-xl-3 col-sm-4">
-              <span class="sub-title"> CONVERSIONS </span><br>
-              <span class="amount"> 432 </span><br>
-              <div class="d-flex flex-row align-items-center">
-                <div
-                    class="arrow d-flex justify-content-center align-items-center rounded-circle"
-                >
-                    <img
-                        src="assets/images/arrow_down_line.svg"
-                    />
-                </div>
-                <span class="percent-down"> -7.7% </span>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-xl-3 col-sm-4">
-              <span class="sub-title"> CONVERSION RATE </span><br>
-              <span class="amount"> 0,12% </span><br>
-              <div class="d-flex flex-row align-items-center">
-                <div
-                    class="arrow d-flex justify-content-center align-items-center rounded-circle"
-                >
-                    <img
-                        src="assets/images/arrow_up_line.svg"
-                    />
-                </div>
-                <span class="percent-up"> -11.0% </span>
-              </div>
-            </div>
+            <div class="chart" id="line-container-segment"></div>
           </div>
-          <div class="chart" id="line-container-1"></div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>URL</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 21,435 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -2.5% </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 230 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -36.8% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 1,07% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -35.2% </span>
+                </div>
+              </div>
+            </div>
+            <div class="chart" id="line-container-url"></div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>ORG</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 2,182 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -25.0% </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 8 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -33.3% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 0,37% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -11.2% </span>
+                </div>
+              </div>
+            </div>
+            <div class="chart" id="line-container-org"></div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>Search</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 391 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_up_line.svg"
+                      />
+                  </div>
+                  <span class="percent-up"> 8.6% </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 8 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -33.3% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 2,05% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_up_line.svg"
+                      />
+                  </div>
+                  <span class="percent-up"> N/A </span>
+                </div>
+              </div>
+            </div>
+            <div class="chart" id="line-container-search"></div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6">
+            <div class="title">
+              <span>Zipcode</span>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <span class="sub-title"> SESSIONS </span><br>
+                <span class="amount"> 4,788 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -37.4% </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <span class="sub-title"> CONVERSIONS </span><br>
+                <span class="amount"> 8 </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -77.8% </span>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <span class="sub-title"> CONVERSION RATE </span><br>
+                <span class="amount"> 0,17% </span><br>
+                <div class="d-flex flex-row align-items-center">
+                  <div
+                      class="arrow d-flex justify-content-center align-items-center rounded-circle"
+                  >
+                      <img
+                          src="assets/images/arrow_down_line.svg"
+                      />
+                  </div>
+                  <span class="percent-down"> -64.5% </span>
+                </div>
+              </div>
+            </div>
+            <div class="chart" id="line-container-zipcode"></div>
+          </div>
         </div>
       </div>
     </div>    

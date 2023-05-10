@@ -1,5 +1,10 @@
 (function () {
-  initCharts();
+  initCharts('line-container-product', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], [56000, 54000, 55100, 50076, 53500, 52000, 32000, '']);
+  initCharts('line-container-segment', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], ['', 7500, 22500, 22100, 4900, 0, 2600, '']);
+  initCharts('line-container-url', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], [3050, 3225, 3400, 3060, 3250, 3200, 1800, '']);
+  initCharts('line-container-org', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], [320, 265, 375, 260, 250, 510, 210, '']);
+  initCharts('line-container-search', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], [42, 44, 62, 55, 93, 60, 23, '']);
+  initCharts('line-container-zipcode', ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'], [420, 400, 850, 410, 390, 1110, 1150, '']);
 })();
 
 function findTick(x, ticks, range) {
@@ -10,8 +15,8 @@ function findTick(x, ticks, range) {
   }
 }
 
-function initCharts() {
-  Highcharts.chart('line-container-1', {
+function initCharts(id, categories, data) {
+  Highcharts.chart(id, {
     chart: {
       style: {
         fontFamily: "Inter",
@@ -34,6 +39,12 @@ function initCharts() {
         text: '',
       },
       labels: {
+        formatter: function () {
+          if (this.value >= 1000)
+            return this.value/1000 + 'k';
+          else
+            return this.value;
+        },
         style: {
           fontSize: "14px",
         },
@@ -42,7 +53,7 @@ function initCharts() {
     },
 
     xAxis: {
-      categories: ['Mar 13', 'Mar 20', 'Mar 27', 'Apr 03', 'Apr 10', 'Apr 17', 'Apr 24', 'May 1'],
+      categories: categories,
       labels: {
         useHTML: true,
         overflow: "justify",
@@ -118,7 +129,6 @@ function initCharts() {
         followPointer: false,
         distance: -50,
       },
-      
       point: {
         events: {
           mouseOver: function(e) {
@@ -134,6 +144,7 @@ function initCharts() {
                 padding: "6px 15px",
                 borderRadius: "30px",
                 height: "30px",
+                zIndex: 9999,
               });
             }
           },
@@ -147,6 +158,7 @@ function initCharts() {
                 padding: 0,
                 borderRadius: 0,
                 height: "30px",
+                zIndex: 1000,
               });
               this.selectedTick = null;
             }
@@ -154,7 +166,7 @@ function initCharts() {
         }
       },
       name: 'Sessions',
-      data: [56000, 54000, 55100, 50076, 53500, 52000, 32000, '']
+      data: data,
     }],
 
   });
