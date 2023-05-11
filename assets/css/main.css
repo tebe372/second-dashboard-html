@@ -36,6 +36,11 @@ body {
   padding: 30px;
 }
 
+.content .chart-container {
+  background-color: #EDF7F9;
+  border: 3px solid white;
+}
+
 .content .chart {
   max-width: 800px !important;
 }

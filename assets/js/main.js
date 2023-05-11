@@ -22,6 +22,7 @@ function initCharts(id, categories, data) {
         fontFamily: "Inter",
         fontWeight: 400,
       },
+      backgroundColor: "#EDF7F9"
     },
 
     credits: {
@@ -154,7 +155,7 @@ function initCharts(id, categories, data) {
                 marginLeft: "0px",
                 marginTop: "0px",
                 color: '#565f76',
-                background: "#FFFFFF",
+                backgroundColor: "#EDF7F9",
                 padding: 0,
                 borderRadius: 0,
                 height: "30px",
